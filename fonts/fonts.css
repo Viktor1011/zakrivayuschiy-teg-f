@@ -8,7 +8,7 @@
   
   @font-face {
     font-family: 'PressStart2P-Regular';
-    src: url(./PressStart2P-Regular.woff) format('woff');
+    src: url(./PressStart2P-Regular.woff) format('woff2 supports variation'), url(./PressStart2P-Regular.woff2) format('woff2-variations');
     font-weight: 400 465 700 785;
     font-display: swap;
   }
