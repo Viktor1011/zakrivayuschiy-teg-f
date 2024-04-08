@@ -175,7 +175,7 @@
   inline-size: 100%;
 }
 
-.card__main-section{
+.card__main-section {
   display: flex;
   gap: 25px;
   flex-direction: column;
@@ -242,15 +242,6 @@
   font-size: 14px;
 }
 
-.card__icon-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  outline: 2px solid transparent;
-  transition: outline var(--transform-time);
-  transition-timing-function: var(--transition-function);
-}
-
 .card__icon-button:hover {
   .like-icon {
     .core {
@@ -302,6 +293,12 @@
       animation: sparks 0.3s 0.3s ease-in reverse;
     }
   }
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: 2px solid transparent;
+  transition: outline var(--transform-time);
+  transition-timing-function: var(--transition-function);
 }
 
 .sparks {
