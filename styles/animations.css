@@ -14,19 +14,19 @@
 */
 
 @keyframes arrow {
-    0% {
-      inset-inline-start: -18px;
-    }
-  
-    100% {
-      inset-inline-start: -14px;
-    }
+  0% {
+    inset-inline-start: -18px;
   }
 
+  100% {
+    inset-inline-start: -14px;
+  }
+}
+
 @keyframes scaling {
-    100% {
-      transform: scale(1.5);
-    }
+  100% {
+    transform: scale(1.5);
+  }
 }
 
 @keyframes sparks {
