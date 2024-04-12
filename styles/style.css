@@ -111,6 +111,8 @@
   color: var(--accent-color-opacity);
   animation: arrow 0.5s infinite ease-in-out alternate;
  /* inset-inline-start: -18px;*/
+  top: 0;
+  left: -18px;
 }
 
 .theme-menu__button:focus-visible::after {
@@ -145,7 +147,7 @@
 .card__image-decor {
   color: var(--accent-color);
   font-family: var(--font-dialog);
-  font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
+  font-size: 14px;
   font-weight: 400;
   position: absolute;
   opacity: 0.5;
@@ -191,7 +193,7 @@
 
 .card__buttons {
   display: flex;
-  gap: 4px;
+  gap: 8px;
   justify-content: flex-end;
 }
 
@@ -308,7 +310,7 @@
 .sparks {
   opacity: 0;
 }
-
+/*
 .card__icon-button:focus {
   outline: none;
 }
@@ -317,13 +319,15 @@
   transition: outline var(--transform-time);
   outline: 2px solid var(--accent-color);
   transition-timing-function: var(--transition-function);
-}*/
+}
+
+посмотрел на макет еще раз. у иконки вообще фокуса нет
 
 .card__icon-button:focus-visible {
   box-shadow: 2px 2px 0 2px var(--accent-color);
   transition: box-shadow var(--transform-time);
   transition-timing-function: var(--transition-function);
-}
+}*/
 
 .footer {
   display: flex;
@@ -338,7 +342,7 @@
   cursor: pointer;
   position: relative;
   align-items: center;
-  padding: 18.5px 21px;
+  padding: 15.5px 21px;
   gap: 8px;
 }
 
@@ -390,7 +394,7 @@
   position: fixed;
   inset: 0;
   transition: opacity 0.3s ease-in-out;
-  line-height: 121%;
+  line-height: 21px;
 }
 
 .dialog__container {
@@ -457,6 +461,11 @@
 @media (width < 1440px) {
   .footer__button {
     flex-direction: column;
+    padding: 14.5px;
+  }
+
+  .footer__image {
+    block-size: 29px;
   }
 
   .card__image-decor {
